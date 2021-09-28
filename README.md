@@ -20,13 +20,11 @@ se crea la clase para conectar a la base de datos
 
 ### para obtener solo una categoria
 
-#### debe ser por metodo post para enviar un parametro por el body tipo json EJEMPLO:
+#### debe ser por metodo post para enviar un parametro por el body tipo json EJEMPLO: Tipo Post en la url:
 
 
 `
-Tipo Post en la url:
 http://localhost:84/webservicephp/controllers/categoria.php?op=GetId
-
 envia la cat_id y retorna
 {
     "cat_id":1
@@ -40,7 +38,6 @@ envia la cat_id y retorna
 `
 url
 http://localhost:84/webservicephp/controllers/categoria.php?op=add
-
 {
     "cat_nom":"saitama",
     "cat_obs":"kaisoku ni naru otoko dese",
@@ -54,7 +51,6 @@ http://localhost:84/webservicephp/controllers/categoria.php?op=add
 
 `
 http://localhost:84/webservicephp/controllers/categoria.php?op=update
-
 {   "cat_id":13,
     "cat_nom":"saitama 3",
     "cat_obs":"loco a la carrera",
