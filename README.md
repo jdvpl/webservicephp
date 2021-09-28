@@ -46,9 +46,30 @@ http://localhost:84/webservicephp/controllers/categoria.php?op=add
     "cat_obs":"kaisoku ni naru otoko dese",
     "est":0
 }
-
 `
 
+### metodo para actualizar ejemplo:
+
+#### metodo put o post tambien funciona si se apunta al endpoint correspondiente
+
+`
+http://localhost:84/webservicephp/controllers/categoria.php?op=update
+
+{   "cat_id":13,
+    "cat_nom":"saitama 3",
+    "cat_obs":"loco a la carrera",
+    "est":1
+}
+`
+
+### aca solo se actualiza el estado ya que solo hace la busqueda cuando el estado es 1: delete ejemplo:
+
+
+`
+http://localhost:84/webservicephp/controllers/categoria.php?op=delete
+{   "cat_id":13
+}
+`
 
 
 

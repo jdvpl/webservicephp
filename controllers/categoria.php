@@ -27,7 +27,16 @@
             // trae esto en un json
             echo json_encode("Se agrego una nueva categoria");
         break;
-
+        case "update":
+            $datos=$categoria->update_categoria($body['cat_id'],$body['cat_nom'], $body['cat_obs'],$body['est']);
+            // trae esto en un json
+            echo json_encode("Se actualizo la categoria  ".$body['cat_nom']."");
+        break;
+        case "delete":
+            $datos=$categoria->delete_categoria($body['cat_id']);
+            // trae esto en un json
+            echo json_encode("Se actualizo la categoria con el id ".$body['cat_id']."");
+        break;
     }
 
 ?>
