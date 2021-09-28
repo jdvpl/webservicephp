@@ -7,7 +7,8 @@
             $sql="SELECT * FROM tm_categoria WHERE est=1";
             $sql=$conectar->prepare($sql);
             $sql->execute();
-            return $resultado=$sql->fetchAll();
+            // IMPORTANTE AGREGARLE EL PDO::FETCH_ASSOC PARA QUE HAGA BIEN LA CONSULTA
+            return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
 
         }
     }
